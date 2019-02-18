@@ -1,0 +1,107 @@
+[ N 2019-02-14 18:55:05.4442 26952/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-02-14 18:55:05.5059 26955/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-02-14 18:55:05.5068 26955/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-02-14 18:55:05.5276 26955/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 26955
+App 26989 output: Traceback (most recent call last):
+App 26989 output:   File "/usr/share/passenger/helper-scripts/wsgi-loader.py", line 369, in <module>
+App 26989 output:     app_module = load_app()
+App 26989 output:   File "/usr/share/passenger/helper-scripts/wsgi-loader.py", line 76, in load_app
+App 26989 output:     return imp.load_source('passenger_wsgi', startup_file)
+App 26989 output:   File "/usr/lib64/python3.6/imp.py", line 172, in load_source
+App 26989 output:     module = _load(spec)
+App 26989 output:   File "<frozen importlib._bootstrap>", line 684, in _load
+App 26989 output:   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+App 26989 output:   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+App 26989 output:   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+App 26989 output:   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+App 26989 output:   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+App 26989 output:   File "/home/danielhoyos/django/animales/passenger_wsgi.py", line 1
+App 26989 output:     import os from django.core.wsgi 
+App 26989 output:                  ^
+App 26989 output: SyntaxError: invalid syntax
+[ E 2019-02-14 18:55:08.2652 26955/Tf age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/danielhoyos/django/animales: The application process exited prematurely.
+  Error ID: 0c8a3ea1
+  Error details saved to: /tmp/passenger-error-Ssl9cT.html
+
+[ E 2019-02-14 18:55:08.2744 26955/T8 age/Cor/Con/CheckoutSession.cpp:276 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 0c8a3ea1. Please see earlier logs for details about the error.
+[ N 2019-02-14 18:55:09.0038 26955/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 27035 output: Traceback (most recent call last):
+App 27035 output:   File "/usr/share/passenger/helper-scripts/wsgi-loader.py", line 369, in <module>
+App 27035 output:     app_module = load_app()
+App 27035 output:   File "/usr/share/passenger/helper-scripts/wsgi-loader.py", line 76, in load_app
+App 27035 output:     return imp.load_source('passenger_wsgi', startup_file)
+App 27035 output:   File "/usr/lib64/python3.6/imp.py", line 172, in load_source
+App 27035 output:     module = _load(spec)
+App 27035 output:   File "<frozen importlib._bootstrap>", line 684, in _load
+App 27035 output:   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+App 27035 output:   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+App 27035 output:   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+App 27035 output:   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+App 27035 output:   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+App 27035 output:   File "/home/danielhoyos/django/animales/passenger_wsgi.py", line 1
+App 27035 output:     import os from django.core.wsgi 
+App 27035 output:                  ^
+App 27035 output: SyntaxError: invalid syntax
+[ E 2019-02-14 18:55:12.1660 26955/Tk age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/danielhoyos/django/animales: The application process exited prematurely.
+  Error ID: 7b7c3044
+  Error details saved to: /tmp/passenger-error-pScVWX.html
+
+[ E 2019-02-14 18:55:12.1768 26955/Tb age/Cor/Con/CheckoutSession.cpp:276 ]: [Client 2-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 7b7c3044. Please see earlier logs for details about the error.
+
+[ N 2019-02-14 18:55:27.9869 26955/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-02-14 18:55:27.9873 26955/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-02-14 18:55:27.9875 26955/Tb Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-02-14 18:55:27.9876 26955/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-02-14 18:55:27.9878 26955/T8 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-02-14 18:55:27.9879 26955/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-02-14 18:55:27.9885 26955/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-02-14 18:55:27.9885 26955/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-02-14 18:55:28.9521 26955/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-02-14 18:55:54.0088 27124/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-02-14 18:55:54.0645 27127/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-02-14 18:55:54.0648 27127/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-02-14 18:55:54.0829 27127/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 27127
+App 27162 output: Traceback (most recent call last):
+App 27162 output:   File "/usr/share/passenger/helper-scripts/wsgi-loader.py", line 369, in <module>
+App 27162 output:     app_module = load_app()
+App 27162 output:   File "/usr/share/passenger/helper-scripts/wsgi-loader.py", line 76, in load_app
+App 27162 output:     return imp.load_source('passenger_wsgi', startup_file)
+App 27162 output:   File "/usr/lib64/python3.6/imp.py", line 172, in load_source
+App 27162 output:     module = _load(spec)
+App 27162 output:   File "<frozen importlib._bootstrap>", line 684, in _load
+App 27162 output:   File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+App 27162 output:   File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+App 27162 output:   File "<frozen importlib._bootstrap_external>", line 781, in get_code
+App 27162 output:   File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+App 27162 output:   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+App 27162 output:   File "/home/danielhoyos/django/animales/passenger_wsgi.py", line 1
+App 27162 output:     import os from django.core.wsgi 
+App 27162 output:                  ^
+App 27162 output: SyntaxError: invalid syntax
+[ E 2019-02-14 18:55:56.6155 27127/Tf age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/danielhoyos/django/animales: The application process exited prematurely.
+  Error ID: 6de522a8
+  Error details saved to: /tmp/passenger-error-iom9ZO.html
+
+[ E 2019-02-14 18:55:56.6255 27127/T9 age/Cor/Con/CheckoutSession.cpp:276 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 6de522a8. Please see earlier logs for details about the error.
+[ N 2019-02-14 18:55:57.5494 27127/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2019-02-14 18:57:24.6116 27127/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-02-14 18:57:24.6119 27127/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-02-14 18:57:24.6121 27127/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-02-14 18:57:24.6122 27127/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-02-14 18:57:24.6131 27127/Tb Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-02-14 18:57:24.6132 27127/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-02-14 18:57:24.6185 27127/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-02-14 18:57:24.6186 27127/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-02-14 18:57:25.5755 27127/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-02-14 19:03:02.2419 27381/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-02-14 19:03:02.3005 27384/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-02-14 19:03:02.3009 27384/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-02-14 19:03:02.3184 27384/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 27384
+App 27419 output: Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+App 27419 output: [ pid=27419, time=2019-02-15 00:03:05,774 ]: Invalid HTTP_HOST header: '0.0.0.0'. You may need to add '0.0.0.0' to ALLOWED_HOSTS.
+[ N 2019-02-14 19:03:05.8240 27384/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+App 27419 output: Bad Request: /
+App 27419 output: [ pid=27419, time=2019-02-15 00:03:05,892 ]: Bad Request: /
+App 27419 output: Not Found: /static/admin/css/fonts.css
+App 27419 output: [ pid=27419, time=2019-02-15 00:03:07,876 ]: Not Found: /static/admin/css/fonts.css
